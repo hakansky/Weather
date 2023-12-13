@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(191,226,205);
+    background: linear-gradient(90deg, rgba(191,226,205,1) 0%, rgba(86,202,222,1) 100%);
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url(../fonts/GreatVibes-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserratt;
+    src: url(../fonts/Montserrat.ttf);
+}
+
+@font-face {
+    font-family: Cruinn;
+    src: url(../fonts/Cruinn.ttf);
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 480px;
+    align-items: center;
+}
+
+                    /*HEADER*/
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: GreatVibes, serif;
+    font-size: 50px;
+    color: grey;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+span {
+    opacity: 50%;
+    text-align: center;
+}
+
+input {
+    font-family: Montserratt, serif;
+    font-size: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    outline-color: white;
+    text-align: center;
+    color: grey;
+    border: 1px solid rgba(89, 89, 89, 0.3);
+}
+
+p {
+    margin-top: 10px;
+    font-size: 10px;
+    color: grey;
+    font-family: Montserratt, serif;
+}
+
+                    /*MAIN*/
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 90%;
+    font-family: Montserratt, serif;
+    border: 1px solid rgba(89, 89, 89, 0.3);
+}
+
+.user-city-name {
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+}
+
+.weather-icon {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.weather-icon img {
+    width: 100px;
+}
+
+.copyright {
+    text-align: end;
+    font-size: 20px;
+    font-family: GreatVibes, serif;
+}
+
+                    /*FIRST ROW*/
+
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-degree {
+    text-align: left;
+    font-size: 60px;
+    font-weight: lighter;
+    color: grey;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Montserrat, serif;
+}
+
+.weather-description {
+    color: grey;
+    font-size: 40px;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-family: Montserrat, serif;
+    font-weight: lighter;
+}
+
+.max-min {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.max {
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: lighter;
+}
+
+.min {
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: lighter;
+}
+
+
+
+                    /*ICON*/
+
+.weather-icon {
+    text-align: center;
+    font-size: 100px;
+}
+
+                    /*SECOND ROW*/
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-feels-like {
+    text-align: left;
+    font-size: 60px;
+    font-weight: lighter;
+    color: grey;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Montserrat, serif;
+}
+
+.weather-wind {
+    color: grey;
+    font-size: 60px;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-family: Montserrat, serif;
+    font-weight: lighter;
+}
+
+                    /*NOTATIONS*/
+
+.notations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feels-like {
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    color: grey;
+    margin-left: 20px;
+    font-family: Montserrat, serif;
+}
+
+.wind {
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    color: grey;
+    margin-right: 60px;
+    font-family: Montserrat, serif;
+}
+
+.button-remember {
+    text-align: center;
+}
+
+                    /*HOVERS*/
+
+.button-remember:hover {
+    cursor: pointer;
+}
+
+.wind:hover {
+    cursor: default;
+}
+
+.feels-like:hover {
+    cursor: default;
+}
+
+.weather-wind:hover {
+    cursor: default;
+}
+
+.weather-feels-like:hover {
+    cursor: default;
+}
+
+.weather-description:hover {
+    cursor: default;
+}
+
+.weather-degree:hover {
+    cursor: default;
+}
+
+h1:hover {
+    cursor: default;
+}
+
+.user-city-name:hover {
+    cursor: default;
+}
+
+header p:hover {
+    cursor: default;
+}
+
+.weather-icon:hover {
+    cursor: default;
+}
