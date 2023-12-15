@@ -10,33 +10,64 @@
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <h1>Weather in.. <span>🍃</span></h1>
-        <input type="text" class="input-user-city">
-        <p>Press "Enter" to search</p>
-    </header>
-    <main>
-        <div class="user-city-name">Kyiv</div>
-        <div class="first-row">
-            <div class="weather-degree">20&degC</div>
-            <div class="weather-description">Rains</div>
-        </div>
-        <div class="max-min">
-            <p class="max">Max: 30&degC |</p>
-            <p class="min">| Min: 20&degC</p>
-        </div>
-        <div class="weather-icon">🍃</div>
-        <div class="second-row">
-            <div class="weather-feels-like">30&degC</div>
-            <div class="weather-wind">5m/s</div>
-        </div>
-        <div class="notations">
-            <p class="feels-like">Feels like</p>
-            <p class="wind">Wind</p>
-        </div>
-        <div class="button-remember">Remember this city</div>
-    </main>
+    <div class="left-section">
+        <header>
+            <h1>Weather in.. <span>🍃</span></h1>
+            <input type="text" class="input-user-city">
+            <p>Press "Enter" to search</p>
+        </header>
+        <main>
+            <div class="user-city-name">Kyiv</div>
+            <div class="first-row">
+                <div class="weather-degree">20&degC</div>
+                <div class="weather-description">Rains</div>
+            </div>
+            <div class="max-min">
+                <p class="max">Max: 30&degC |</p>
+                <p class="min">| Min: 20&degC</p>
+            </div>
+            <div class="weather-icon">🍃</div>
+            <div class="second-row">
+                <div class="weather-feels-like">30&degC</div>
+                <div class="weather-wind">5m/s</div>
+            </div>
+            <div class="notations">
+                <p class="feels-like">Feels like</p>
+                <p class="wind">Wind</p>
+            </div>
+            <div class="button-remember">Remember this city</div>
+            <div class="arrow">⇲</div>
+        </main>
+    </div>
     <p class="copyright">© Designed by Haivoronskyi Kh.</p>
+    <aside>
+        <div class="container">
+            <div class="first-day">
+                <span id="firstDay">First day</span>
+                <div class="first-img">🍃</div>
+                <div class="max-min-4" id="max-min-4-1">Temp: 10&deg</div>
+                <div class="date1"></div>
+            </div>
+            <div class="second-day">
+                <span id="secondDay">Second day</span>
+                <div class="second-img">🍃</div>
+                <div class="max-min-4" id="max-min-4-2">Temp: 10&deg</div>
+                <div class="date2"></div>
+            </div>
+            <div class="third-day">
+                <span id="thirdDay">Third day</span>
+                <div class="third-img">🍃</div>
+                <div class="max-min-4" id="max-min-4-3">Temp: 10&deg</div>
+                <div class="date3"></div>
+            </div>
+            <div class="fourth-day">
+                <span id="fourthDay">Fourth day</span>
+                <div class="fourth-img">🍃</div>
+                <div class="max-min-4" id="max-min-4-4">Temp: 10&deg</div>
+                <div class="date4"></div>
+            </div>
+        </div>
+    </aside>
 </div>
 
 <script src="./src/main.js"></script>
