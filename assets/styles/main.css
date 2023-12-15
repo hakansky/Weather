@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 480px;
     align-items: center;
 }
@@ -46,7 +46,7 @@ h1 {
     margin-top: 10px;
 }
 
-span {
+header span {
     opacity: 50%;
     text-align: center;
 }
@@ -60,6 +60,7 @@ input {
     text-align: center;
     color: grey;
     border: 1px solid rgba(89, 89, 89, 0.3);
+    transition: transform .3s ease-in-out;
 }
 
 p {
@@ -99,9 +100,12 @@ main {
 }
 
 .copyright {
-    text-align: end;
+    text-align: center;
     font-size: 20px;
     font-family: GreatVibes, serif;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
 }
 
                     /*FIRST ROW*/
@@ -217,7 +221,130 @@ main {
     text-align: center;
 }
 
+.arrow {
+    font-size: 20px;
+    margin-right: 8px;
+    color: grey;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 410px;
+    top: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+                    /*SECOND SECTION*/
+
+aside {
+    color: grey;
+    font-family: Montserratt, serif;
+    display: flex;
+    flex-direction: column;
+    margin: 73px 0 0 0;
+    opacity: 0;
+    animation: ani 1s forwards;
+}
+
+.animation {
+    opacity: 0;
+    animation: ani 1s forwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+aside .first-day {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid rgba(89, 89, 89, 0.3);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 160px 30px 30px 30px;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+}
+
+aside .second-day {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid rgba(89, 89, 89, 0.3);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 30px;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+}
+
+aside .third-day {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid rgba(89, 89, 89, 0.3);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 30px;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+}
+
+aside .fourth-day {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid rgba(89, 89, 89, 0.3);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    margin: 30px;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+}
+
+aside span {
+    width: 100px;
+}
+
+aside .max-min-4 {
+    width: 100px;
+}
+
                     /*HOVERS*/
+
+.arrow:hover {
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.first-day:hover {
+    transform: scale(1.03);
+}
+.second-day:hover {
+    transform: scale(1.03);
+}
+.third-day:hover {
+    transform: scale(1.03);
+}
+.fourth-day:hover {
+    transform: scale(1.03);
+}
+input:hover {
+    transform: scale(1.03);
+}
 
 .button-remember:hover {
     cursor: pointer;
