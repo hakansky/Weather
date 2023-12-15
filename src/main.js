@@ -105,7 +105,7 @@ function getWeather(city) {
 
             let iconCode = data.weather[0]['icon'];
             let iconFileName = iconMapping[iconCode];
-            let imagePath = `../assets/icons/amcharts_weather_icons_1.0.0/animated/${iconFileName}`;
+            let imagePath = `./assets/icons/amcharts_weather_icons_1.0.0/animated/${iconFileName}`;
             weatherIcon.innerHTML = `<img src="${imagePath}" />`;
 
             let temperature = Math.round(data.main.temp);
@@ -159,10 +159,10 @@ function getWeatherForNextDays (city) {
             let secondIconFileName = iconMapping[iconCodeSecond];
             let thirdIconFileName = iconMapping[iconCodeThird];
             let fourthIconFileName = iconMapping[iconCodeFourth];
-            let firstImagePath = `../assets/icons/amcharts_weather_icons_1.0.0/animated/${firstIconFileName}`;
-            let secondImagePath = `../assets/icons/amcharts_weather_icons_1.0.0/animated/${secondIconFileName}`;
-            let thirdImagePath = `../assets/icons/amcharts_weather_icons_1.0.0/animated/${thirdIconFileName}`;
-            let fourthImagePath = `../assets/icons/amcharts_weather_icons_1.0.0/animated/${fourthIconFileName}`;
+            let firstImagePath = `./assets/icons/amcharts_weather_icons_1.0.0/animated/${firstIconFileName}`;
+            let secondImagePath = `./assets/icons/amcharts_weather_icons_1.0.0/animated/${secondIconFileName}`;
+            let thirdImagePath = `./assets/icons/amcharts_weather_icons_1.0.0/animated/${thirdIconFileName}`;
+            let fourthImagePath = `./assets/icons/amcharts_weather_icons_1.0.0/animated/${fourthIconFileName}`;
             firstIMG.innerHTML = `<img src="${firstImagePath}" />`;
             secondIMG.innerHTML = `<img src="${secondImagePath}" />`;
             thirdIMG.innerHTML = `<img src="${thirdImagePath}" />`;
